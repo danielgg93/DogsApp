@@ -15,8 +15,7 @@ export class DetalleComponent  {
   constructor(private activatedRoute: ActivatedRoute,
     private provider: ProvidersService) { 
       this.activatedRoute.params.subscribe(params => {
-        this.dog = this.provider.grid_perros(params['id']);
-        console.log(this.dog);
+        this.dog = this.provider.getPerro(params['id']);
       });
 
    

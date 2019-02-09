@@ -21,6 +21,7 @@ export class PerrosCardComponent implements OnInit {
   detallePerros(){
     this.router.navigate(['/detalle', this.index]);
     console.log("WORK")
-
   }
+
+  
 }

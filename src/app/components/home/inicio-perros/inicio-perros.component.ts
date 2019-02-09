@@ -19,7 +19,6 @@ export class InicioPerrosComponent implements OnInit {
   getPerros(){
     this.provider.imagen_perros_home().then((data) => {
       this.perros = data.message;
-      console.log(this.perros);
     }).catch(err => {
     });
   }
