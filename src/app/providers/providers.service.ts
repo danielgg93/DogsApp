@@ -72,24 +72,5 @@ export class ProvidersService {
 
   }
 
-  /*getPerroImage(perroInfo) {
-    let perroInfoArray = Object.keys(perroInfo.message);
-    //return this.perroInfo.message;
-    console.log(perroInfoArray);
-    perroInfoArray.map((dog , index) => {
-      return new Promise <any> ((resolve, reject) =>
-      this.http.get(`${this.apiUrl4}${dog}/images/random`).
-      subscribe(res=>{
-        this.perrosImage = [...this.perrosImage,res];
-        resolve(this.perrosImage);
-        console.log(this.perrosImage);
-      }, (err)=>{
-        reject (err);
-      })
-      );
-
-    })
-  }*/
-  
 }
 
